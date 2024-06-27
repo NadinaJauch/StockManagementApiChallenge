@@ -64,6 +64,19 @@ namespace API.StockManagement.Infrastructure.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "Product",
+                columns: new[] { "Id", "Category", "Description", "LoadDate", "Price", "UpdateDate" },
+                values: new object[,]
+                {
+                    { 1, "category1", "classic", new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5040), 80m, new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5053) },
+                    { 2, "category1", "gold", new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5057), 120m, new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5058) },
+                    { 3, "category1", "black", new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5060), 150m, new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5061) },
+                    { 4, "category2", "classic", new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5063), 160m, new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5064) },
+                    { 5, "category2", "gold", new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5066), 230m, new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5067) },
+                    { 6, "category2", "black", new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5068), 360m, new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5069) }
+                });
+
+            migrationBuilder.InsertData(
                 table: "Role",
                 columns: new[] { "Id", "RoleDescription" },
                 values: new object[,]

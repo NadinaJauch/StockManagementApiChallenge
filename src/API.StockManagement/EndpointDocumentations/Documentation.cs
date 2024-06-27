@@ -4,7 +4,7 @@
     {
         public static class Auth
         {
-            public const string Authenticate = "Devuelve JWT a partir de las credenciales ingresadas";
+            public const string Authenticate = "Devuelve JWT a partir de las credenciales ingresadas, no distingue mayusculas";
         }
 
         public static class Product

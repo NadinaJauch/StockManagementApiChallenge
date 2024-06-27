@@ -50,6 +50,62 @@ namespace API.StockManagement.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Product");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Category = "category1",
+                            Description = "classic",
+                            LoadDate = new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5040),
+                            Price = 80m,
+                            UpdateDate = new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5053)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Category = "category1",
+                            Description = "gold",
+                            LoadDate = new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5057),
+                            Price = 120m,
+                            UpdateDate = new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5058)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Category = "category1",
+                            Description = "black",
+                            LoadDate = new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5060),
+                            Price = 150m,
+                            UpdateDate = new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5061)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Category = "category2",
+                            Description = "classic",
+                            LoadDate = new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5063),
+                            Price = 160m,
+                            UpdateDate = new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5064)
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Category = "category2",
+                            Description = "gold",
+                            LoadDate = new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5066),
+                            Price = 230m,
+                            UpdateDate = new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5067)
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Category = "category2",
+                            Description = "black",
+                            LoadDate = new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5068),
+                            Price = 360m,
+                            UpdateDate = new DateTime(2024, 6, 27, 10, 25, 49, 870, DateTimeKind.Local).AddTicks(5069)
+                        });
                 });
 
             modelBuilder.Entity("API.StockManagement.Domain.Entities.Role", b =>
